@@ -1,0 +1,100 @@
+q2:
+-rw-r--r-- 1 ss4328 ss4328  8060 Jul  8 23:47 funny
+-rwxr-xr-x 1 ss4328 ss4328   240 Jul  8 23:47 hello.bash
+drwxrwxr-x 2 ss4328 ss4328    21 Jul  8 00:10 lab01
+-rw-rw-r-- 1 ss4328 ss4328 33174 Jul  8 23:37 vi_lab
+
+q3:
+read and write to self, read permissions to the world
+
+q4:
+read + write + execute permissions to self; read and execute permissions to group to all.
+
+q5:
+chmod 644 was the last command which sanctioned read permissions to self. so, YES
+
+q6:
+chmod 644 was the last command which sanctioned read permissions to self. so, YES
+
+q7:
+not successful; permission denied
+
+q8:
+chmod with 7xx where x can be anything between 0 and 7
+assigning read permission while copying
+
+q9:
+permissions to funny was changed in this command. Now the new permissions assign only read permission to self and no permission to group/world
+
+q10:
+for command 1 the output was:
+=====================================
+
+/home/kschmidt/public_html/CS265/Labs/Unix/annoy
+/home/kschmidt/public_html/CS265/Labs/Unix/annoy.bash
+/home/kschmidt/public_html/CS265/Labs/Unix/annoy.cc
+/home/kschmidt/public_html/CS265/Labs/Unix/chmod_lab.orig
+/home/kschmidt/public_html/CS265/Labs/Unix/funny
+/home/kschmidt/public_html/CS265/Labs/Unix/hello.bash
+/home/kschmidt/public_html/CS265/Labs/Unix/ids
+/home/kschmidt/public_html/CS265/Labs/Unix/itemList
+/home/kschmidt/public_html/CS265/Labs/Unix/itemList-2cols
+/home/kschmidt/public_html/CS265/Labs/Unix/kam.html
+/home/kschmidt/public_html/CS265/Labs/Unix/kurt
+/home/kschmidt/public_html/CS265/Labs/Unix/lateExcuses
+/home/kschmidt/public_html/CS265/Labs/Unix/list
+/home/kschmidt/public_html/CS265/Labs/Unix/ls
+/home/kschmidt/public_html/CS265/Labs/Unix/Makefile
+/home/kschmidt/public_html/CS265/Labs/Unix/moreUnix.html
+/home/kschmidt/public_html/CS265/Labs/Unix/msg
+/home/kschmidt/public_html/CS265/Labs/Unix/numList
+/home/kschmidt/public_html/CS265/Labs/Unix/output
+/home/kschmidt/public_html/CS265/Labs/Unix/regexp-input
+/home/kschmidt/public_html/CS265/Labs/Unix/sample.html
+/home/kschmidt/public_html/CS265/Labs/Unix/spaces
+/home/kschmidt/public_html/CS265/Labs/Unix/streams.bash
+/home/kschmidt/public_html/CS265/Labs/Unix/TelecomTruths
+/home/kschmidt/public_html/CS265/Labs/Unix/tormentTelemarketers
+/home/kschmidt/public_html/CS265/Labs/Unix/UnitTestingPhase
+
+ls: cannot open directory '/home/kschmidt/public_html/CS265/Labs/Unix/Grade': Permission denied
+
+==========================
+
+for command 2 the output was:
+==========================
+/home/kschmidt/public_html/CS265/Labs/Unix/annoy
+/home/kschmidt/public_html/CS265/Labs/Unix/annoy.bash
+/home/kschmidt/public_html/CS265/Labs/Unix/annoy.cc
+==========================
+
+for command 3 the output was:
+=========================
+/home/kschmidt/public_html/CS265/Labs/Unix/chmod_lab.orig
+/home/kschmidt/public_html/CS265/Labs/Unix/itemList
+/home/kschmidt/public_html/CS265/Labs/Unix/itemList-2cols
+/home/kschmidt/public_html/CS265/Labs/Unix/kam.html
+/home/kschmidt/public_html/CS265/Labs/Unix/moreUnix.html
+/home/kschmidt/public_html/CS265/Labs/Unix/msg
+/home/kschmidt/public_html/CS265/Labs/Unix/numList
+/home/kschmidt/public_html/CS265/Labs/Unix/sample.html
+/home/kschmidt/public_html/CS265/Labs/Unix/streams.bash
+/home/kschmidt/public_html/CS265/Labs/Unix/TelecomTruths
+/home/kschmidt/public_html/CS265/Labs/Unix/tormentTelemarketers
+=========================
+
+for command 4 the output was:
+=========================
+/home/kschmidt/public_html/CS265/Labs/Unix/annoy
+========================
+
+for command 5 the output was:
+========================
+ls: cannot access '/home/kschmidt/public_html/CS265/Labs/Unix/annoy?': No such file or directory
+========================
+
+q11:
+looks like we were trying to list out the files in kshmidt/public_html/CS265/Labs/Unix dierctory. The first result yield all since there was just *, the second yielded any that started with an 'a', the third yielded any that had an 'm' in file name, the fourth gave any with the name 'anno?' where ? can be anything. The fifth failed because there were non with 'annoy? because there was possibly no extra character after 'annoy' filename.
+
+
+
