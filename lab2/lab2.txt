@@ -1,0 +1,67 @@
+Question 1:
+
+ss4328@tux4:~/CS265/ss4328-CS265$ find . -type f -mtime 2
+./.git/refs/heads/master
+./.git/refs/remotes/origin/master
+./.git/objects/c0/b115c23836bb0d5677369e862d9ca327991958
+./.git/objects/6b/e3cc8155cdc71538e570d657ab09033bca4584
+./.git/objects/bd/526359f239bd53df6ec50dddbe8a9240d6031a
+./.git/objects/bb/9800dc35bc67808f2304dca7ea4c5a316fd1b0
+./.git/objects/db/40c38cbdc01b03b07e3fc629fc78d0900b5bb6
+./.git/objects/1f/bf825f53310462223459a4532959066c3fbc8d
+./.git/objects/9d/2974b544678c5bdb78d87da256e809b90805e6
+./.git/objects/ea/1daf8aae8d2212e7893e67a055113ded46cc8f
+./.git/index
+./.git/COMMIT_EDITMSG
+./.git/logs/refs/heads/master
+./.git/logs/refs/remotes/origin/master
+./.git/logs/HEAD
+./lab1/funny
+./lab1/hello.bash
+./lab1/vi_lab
+./lab1/a
+
+Question 2:
+The result I got running the new command was:
+./ss4328-CS265/lab2/tmp/gotMe.bash
+./ss4328-CS265/lab1/hello.bash
+=> The difference here is between the find parameters. The first command asks for regular files modified within last two days. The second command asks for file who have extention of 'bash'
+
+Question 3:
+The -type flag is used to narrow down the search parameters. Man find yields complete documentation in which its stated that f stands for regular file (similar options are b:block, c:character, s:socker, D:Door)
+The -name flag helps narrow down search by passing characters that we're looking in the file name. For example we user "*bash" to narrow our search to the bash files only.
+
+Question 4:
+wc breadIsDangerous.txt
+
+Question 5:
+grep 'the' breadIsDangerous.txt | wc -l
+
+Question 6:
+doing a ls -la, I see that a new file called spellExample (as  opposed to oprginal spellExample.bak) was created
+
+Question 7:
+Output=======>
+1c1
+< I went to a garden party
+---
+> I went to a gadren party
+3c3
+< bunch of my old friends did something
+---
+> bnuch of my old freinds did somehting
+6d5
+< an extra line
+Output=======>
+
+The command output here explains the difference between the two files. These are the differences that I made using ispell command before q6.
+
+Question 8:
+Since we're comparing the same file, there was no difference and the output was blank
+
+Question 9:
+du command prints out disk usage by every file in the directory. The -h flag prints the output in human readable format (b, K, M, G) and the * means that we're looking for all the files in the directory.
+
+Question 10:
+the $ refers to the output that we want to use here. In second parameter (dough, uniquestring, dough) refers to stuff we want to find, the last value is filena,e. the first two filenames are valid but "noSuchFile" is not. Also, in the second command 'uniqueString" doesn't exist.
+ 
