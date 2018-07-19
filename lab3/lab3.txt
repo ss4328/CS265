@@ -1,0 +1,25 @@
+Question 1:
+The script args.bash explains the different wasy to enumerate over and print the argument list provided in a bash script. Firstly, it prints out the argument list, then it prints five different ways to enumerate over the arguments.
+
+Question 2:
+Using the first way, we can only access arguments that are numbered in one digit (so basically until arg no. 9) $11 for instance will print out the value of $1 succeded by a 1. ${11} on th eother hand will give out the value of arg no. 11
+
+Question 3:
+This script basicaly gives out examples of basic shell scripting. The script demonstrates the use of find command with flags, ps command, grep command, conditional statements (if else) and for loop in bash.
+
+Question 4:
+This is just a tiny script that demonstrates the exit command. If a number is passed with the arguments, it exits. If a numberic argument is not passed with the argument, it prints a statement asking for a numeric argument and then exits.
+
+Question 5:
+File count.bash submitted
+
+Question 6:
+File reextend.bash submitted
+
+Question 7:
+File oranizeMusic.bash submitted
+
+Questino 8:
+Done and verified
+
+
