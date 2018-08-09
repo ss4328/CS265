@@ -1,0 +1,82 @@
+Exercise 1-1:
+The choice of names for variables is not goof in this program. Since True is 1 and False is 0 in C, it'd make sense to swap the variable names. Also the name 'not_eof' is  little weird. Maybe if it's renamed to is_eof, it would make more sense since the not_eof might imply a double negative and confuse the programmer.
+
+Exercise 1-2:
+int lessEqualChecker(char *s, char *t)
+{
+	return strcmp(s,t) <=0;
+} 
+
+This returns true only if s is <=0 and is less wordy
+
+Exercise 1-3:
+I don't know what to write here other than to mention that I did read it aloud
+
+Exercise 1-4:
+if( (c!='y') && (c!='Y')){
+	return:
+}
+
+
+if (length >= BUFSIZE)
+{
+	length = BUFSIZE;
+}
+
+flag = !flag;
+
+quote = (*line == '');
+
+bit = 1;
+
+Exercise 1-5:
+Since these are input parameters to a function insert, we don't know if the order that we passed the inputs will be preserved. This can mess up the program.
+
+Exercise 1-6:
+1,1 
+2,1
+I ran this on visual studio, and G++;
+
+Exercise 1-7:
+if (!(isitty(stdin)) && !(isitty (stdout)) && !(isitty(stderr))){
+	return (0);
+}
+
+if (retval != SUCCESS) 
+{
+	return (retval);
+}
+
+for(k=1; k <5; k++){
+	scanf("%lf", &dx);
+	x+=dx;
+}
+
+Exercise 1-8:
+for(int i=0; i<total; i++)
+{
+	if(this.getName[i] ==nametable.userName())
+	{
+		return true;
+	}
+}
+
+I don't know if its just me who thinks that but the getname(i) might not make that much sense as compared tp getName[i]. So I replaced it with what I think is the improvement. Again, I'm not sure but I just want to put it out there that the replacement of (i) with [i] was intentional.
+
+Exercise 1.9:
+The problem with this Macro definition is that the lack of parenthesis around its internal content makes it purpose and functioning extremely vague. I consider myself not a bad developer but even after giving it considerable thought I can't discern what the declaration is trying to imply or do.
+
+Exercise 1.10:
+Per my understanding, these are variables to store the conversion numbers for translating values between feet and meters, meters and feet, miles to feet, miles to kilometer, and square miles to square kilometer. I'd just rename the variables such that the naming reflects the purpose and definition for their usage. I'd rename the variables respectively: 
+FeetToMeter,
+MeterToFeet,
+MilesToFeet,
+MilesToKilometers,
+SquareMilesToSquareKilometers
+
+Exercise 1.11:
+The comment is wrong because the function is void and doesn't return anything. It also doesn't mention which dictionary.
+
+The second comment is wrong because its missing the condition which tests if n>MAX
+
+The comments in the third case are utterly useless and don't contribute anything new towards discerning the workings of the program. The function itself is vague and don't say what its writing. Also the global variable line-number is named a little bit weirdly(might be helpful if camel cased) and gets updated by +3 after the function. The function fails to mention this value change of global variable.
